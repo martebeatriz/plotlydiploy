@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bellybutton Biodiversity</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel=”stylesheet” href=”css/bootstrap-responsive.css”>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class = "row">
+      <nav class="navbar  navbar-expand-lg">
+        <a href="#bar" name="bar" >Bar Graph</a> <br>
+        <a href="#gauge" name="gauge">Gauge Chart</a><br>
+        <a href="#bubble" name="bubble">Bubble Graph</a>
+        </nav>
+
+    </div>
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h1>Belly Button Biodiversity Dashboard</h1>
+        <p>Use the interactive charts below to explore the dataset</p>
+      </div>    
+    </div>
+    <div class = "row">
+      <div class="col-md-12 greeting">
+        <p> Many bacterial species can be found in the belly button. Thanks to your help, we can gather data on these 
+          bacteria in order to determine whether they can be synthesized to create a meat-like flavor. Below, you will be able to see information on the bacteria gathered on your person. Enter your Test Subject ID Number below to get started. 
+        </p>
+      </div>
+
+
+    </div>
+    <div class="row text-center">
+      <div class="col-md-10">
+        <div class="well">
+          <h5>Test Subject ID No.:</h5>
+          <!-- <select id="selDataset"></select> -->
+          <select id="selDataset" onchange="optionChanged(this.value)"></select>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Demographic Info</h3>
+          </div>
+          <div id="sample-metadata" class="panel-body"></div>
+        </div>
+      </div>
+    </div>
+    <div class = "row">
+      <div class="col-md-10 text-left">
+        <div id="bar"></div>
+        <p style= "color:#f7f7f7; font-size: large">The top 10 bacterial species found on this person are displayed in the bar chart above. </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-left">
+        <div id="gauge"></div>
+        <p style= "color:#f7f7f7; font-size: large">The weekly washing frequency's of the participant is dispayed.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div id="bubble"></div>
+        <p style= "color:#f7f7f7; font-size: large">The chart represents the bacteria found in the individual. The size of the bubbles is a representation of their value. </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="./js/charts.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+/* body {
+    padding: 10;
+} */
+.jumbotron{
+    background-image: url("../images/bacteria.jpeg");    
+    background-size: 100% 100%;
+    color: #f7f7f7
+}
+
+body {
+    background-color: #031161e2;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.greeting {
+    color: #f7f7f7;
+    font-size: x-large ;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar {
+    color:#f7f7f7; 
+    font-size: x-large;  
+    background-color:#f7f7f7; 
+}
