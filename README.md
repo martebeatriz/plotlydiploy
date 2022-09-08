@@ -1,4 +1,6 @@
-# Through the use JavaScript, Ployly, D3.json(), and external data fetched from CSV files and web APIs, we built a website with a dashboard to display the information in charts.
+# Plotly & Belly Button Biodiversity
+
+Through the use JavaScript, Ployly, D3.json(), and external data fetched from CSV files and web APIs, we built a website with a dashboard to display the information in charts.
 
 ## The information: 
 
